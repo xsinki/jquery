@@ -1,0 +1,14 @@
+<div id="our_div_id"></div>
+<script>
+	$(function () {
+
+		$.get("/our_url", function (data) {
+
+			var content = $(" #our_content", data).html();
+
+			$("#our_div_id").html(content);
+
+		});
+
+	});
+</script>
